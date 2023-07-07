@@ -4,12 +4,22 @@ const express = require('express')
 const app = express()
 const port = 8000
 
-// EndPoints
+// EndPoints 
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
+// MiddleWare 
 
+app.use(express.json())
+
+
+// Avalable Routes
+app.use('/api/auth', require('./auth'))
+app.use('/api/notes', require('./notes'))
+
+
+// Listening the port 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
