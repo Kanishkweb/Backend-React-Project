@@ -5,6 +5,7 @@
     "ms-vscode.vscode-typescript-next",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "formulahendry.code-runner"
+    "formulahendry.code-runner",
+    "rangav.vscode-thunder-client" // Add Thunder Client extension here
   ]
 }

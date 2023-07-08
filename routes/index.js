@@ -2,7 +2,7 @@ const main = require("./db");
 // Express Server Setup
 const express = require('express')
 const app = express()
-const port = 8000
+const port = 7000
 
 // EndPoints 
 
