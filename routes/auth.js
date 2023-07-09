@@ -15,10 +15,15 @@ const fetchuser = require("../middleware/fetchuser");
 // Secreat key JWT_SECRET
 const JWT_SECRET = "Harryisagood$oy";
 
-// All routes ------------------------------------------------------------------------------
+// ----------------All routes --------------------------------------------------------------
 // ----------------------------------------------------------------------------------------/*
 
+
+/*--------------------------------------ROUTE-1--------------------------------------------*/
+
 // Route - 1 : Create a User using POST /api/auth/createuser - No login required
+
+
 router.post(
   "/createuser",
   [
@@ -72,9 +77,11 @@ router.post(
   }
 );
 
-/*-------------------------------------------------------------------------------------------*/
+/*--------------------------------------ROUTE-3---------------------------------------*/
 
 //  Route - 2 : Authenticate a User using POST : "api/auth/login" - No login required
+
+
 router.post(
   "/login",
   [
@@ -116,8 +123,10 @@ router.post(
     }
   }
 );
+/*------------------------------ROUTE-3-----------------------------------------------*/
 
 // Route - 3 : Get loggedin User Details using: POST "/api/auth/getuser". Login required
+
 
 router.post("/getuser", fetchuser, async (req, res) => {
   try {
