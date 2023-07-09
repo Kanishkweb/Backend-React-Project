@@ -1,4 +1,6 @@
+// Importing Mongoose DataBase Connection
 const main = require("./db");
+
 // Express Server Setup
 const express = require('express')
 const app = express()
